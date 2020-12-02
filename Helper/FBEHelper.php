@@ -127,7 +127,7 @@ class FBEHelper extends AbstractHelper {
   public function getBaseUrlMedia() {
     return $this->_storeManager->getStore()->getBaseUrl(
       UrlInterface::URL_TYPE_MEDIA,
-      $this->maybeUseHTTPS());
+      true);
   }
 
   private function maybeUseHTTPS() {
