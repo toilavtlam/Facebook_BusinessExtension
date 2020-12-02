@@ -154,7 +154,7 @@ class FBEHelper extends AbstractHelper {
     // Use this function to get a base url respect to host protocol
     return $this->getStore()->getBaseUrl(
       UrlInterface::URL_TYPE_WEB,
-      $this->maybeUseHTTPS());
+      true);
   }
 
 
